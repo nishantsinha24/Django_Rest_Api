@@ -20,7 +20,7 @@ class Employee (models.Model):
     name = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
     address = models.CharField(max_length=200)
-    phone = models.IntegerField(max_length=10)
+    phone = models.CharField(max_length=10)
     about = models.TextField()
     position = models.CharField(max_length=50 , choices=(('Manager' , 'Manager'), ('Software Engineer' , 'Software Engieer'), ('Software Tester','Software Tester')))
     
